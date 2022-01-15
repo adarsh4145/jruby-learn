@@ -1,0 +1,19 @@
+Setting up jRuby dev environment (ubuntu):
+
+1. need to get Amazon Correto Java 11
+    $ wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
+    $ sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+    $ sudo apt-get update; sudo apt-get install -y java-11-amazon-corretto-jdk
+
+2. need to get rvm (ruby package management):
+    install instructions at:
+    https://github.com/rvm/ubuntu_rvm
+
+3. need to install jRuby using rvm:
+    $ rvm install jruby
+    $ rvm use jruby
+    $rvm --default use jruby (optional)
+    $ ruby -v
+
+4. need to install vscode ide, with ruby extensions.
+ 
